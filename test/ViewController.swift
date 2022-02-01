@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btndidClick(_ sender: UIButton) {
-        print("clickkete")
+        print("clickkato mi hai")
         btnHello.setTitle("cliccato mi hai", for: .normal)
     }
     
