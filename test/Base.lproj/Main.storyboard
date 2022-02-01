@@ -15,20 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="N9Y-Lc-NIc">
-                                <rect key="frame" x="91" y="394" width="232" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="N9Y-Lc-NIc">
+                                <rect key="frame" x="108" y="424" width="198" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.58520018640000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.58520018640703675" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="HELLO WORLD" subtitle="">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btndidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbt-xz-NVy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.38069946756577033" green="1" blue="0.64119822801198123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N9Y-Lc-NIc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LRh-Gg-XMR"/>
+                            <constraint firstItem="N9Y-Lc-NIc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XjC-IB-bEA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnHello" destination="N9Y-Lc-NIc" id="3HB-pj-QUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

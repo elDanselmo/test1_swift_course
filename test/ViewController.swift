@@ -9,11 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnHello: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("view caricata")
     }
-
-
+    
+    @IBAction func btndidClick(_ sender: UIButton) {
+        print("clickkete")
+        btnHello.setTitle("cliccato mi hai", for: .normal)
+    }
+    
+    
 }
 
